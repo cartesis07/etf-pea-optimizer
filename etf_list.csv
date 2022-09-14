@@ -1,4 +1,19 @@
-name, symbol
-Lyxor MSCI South Africa UCITS ETF Acc, AFS.XPAR
-Lyxor MSCI AC Asia Pacific Ex Japan UCITS ETF - Ac, AEJ.XPAR
-Lyxor EURO STOXX Banks UCITS ETF P Acc, BNKE.XPAR
+name,symbol
+Lyxor PEA Asie Pacifique (MSCI AC Asia Pacific ex,PAEJ.XPAR
+Lyxor EURO STOXX Banks UCITS ETF P Acc,BNKE.XPAR
+Lyxor CAC 40 (DR) UCITS ETF Acc,CACC.XPAR
+Lyxor PEA Nasdaq-100 UCITS ETF Capi,LYMS.XETRA
+Lyxor PEA S&P 500 UCITS ETF Capi,PSP5.XPAR
+Lyxor PEA Emergents (MSCI Emerging Markets) UCITS,PLEM.XPAR
+Lyxor PEA Coree (MSCI Korea) UCITS ETF Capi,PKRW.XPAR
+Lyxor PEA Eau (World Water) UCITS ETF Capi,AWAT.XPAR
+Lyxor PEA Immobilier Europe (FTSE EPRA/NAREIT) UCI,PMEH.XPAR
+Lyxor STOXX Europe 600 Automobiles & Parts UCITS E,DFOA.XETRA
+Lyxor STOXX Europe 600 Food & Beverage UCITS ETF D,DFOP.XETRA
+Lyxor STOXX Europe 600 Industrial Goods & Services,INDU.XETRA
+Lyxor STOXX Europe 600 Personal & Household Goods,MTDA.XETRA
+Lyxor PEA Monde (MSCI World) UCITS ETF Capi,EWLD.XPAR
+Lyxor PEA Obligations d'Ã‰tat Euro,OBLI.XPAR
+Lyxor PEA Chine (MSCI China) UCITS ETF Capi,PASI.XPAR
+Lyxor PEA Dow Jones Industrial Average UCITS ETF C,PDJE.XPAR
+Lyxor PEA Inde (MSCI India) UCITS ETF Capi,PINR.XPAR
