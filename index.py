@@ -1,6 +1,9 @@
 import pandas_datareader.data as web
+from pandas.io.json import json_normalize
 import datetime
 import pandas as pd 
+import io
+import requests
 
 import urllib3
 http = urllib3.PoolManager()
@@ -28,13 +31,18 @@ import pandas as pd
 
 etf_list = pd.read_csv('etf_list.csv')
 
-print(etf_list.to_string())
+# print(etf_list.to_string())
 
 # get etf history with marketstack
 
 def get_etf(ticker):
-    request = http.request('GET', 'http://api.marketstack.com/v1/eod?access_key=87a17751375d57c0a6dcecbfd9181246&symbols=' + ticker)
-    #print(json.loads(request.data.decode('utf-8')))
+    request = requests.get('http://api.marketstack.com/v1/eod?access_key=87a17751375d57c0a6dcecbfd9181246&symbols=' + ticker).json()
+    print(request['data'])
+    df  = pd.DataFrame.from_dict(request['data'])
+    print(df.head())
+    # string = io.StringIO(request.data.decode('utf-8'))
+    # request_df = pd.read_csv(string)
+    # print(request_df.head())
     return request
 
 asia = get_etf("AEJ.XPAR")
