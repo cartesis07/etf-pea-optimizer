@@ -37,15 +37,11 @@ etf_list = pd.read_csv('etf_list.csv')
 
 def get_etf(ticker):
     request = requests.get('http://api.marketstack.com/v1/eod?access_key=87a17751375d57c0a6dcecbfd9181246&symbols=' + ticker).json()
-    print(request['data'])
     df  = pd.DataFrame.from_dict(request['data'])
-    print(df.head())
-    # string = io.StringIO(request.data.decode('utf-8'))
-    # request_df = pd.read_csv(string)
-    # print(request_df.head())
-    return request
+    return df[['date','open']]
 
 asia = get_etf("AEJ.XPAR")
+print(asia.head())
  
 # https://swapi.dev/api/starships/9/ example url
 
